@@ -32,6 +32,9 @@ TARGET_SUPPORTS_CALL_RECORDING := true
 FORCE_AOSP_DIALER := true
 ARROW_GAPPS := true
 
+# 2by2 Stuff
+2BY2_BUILD_TYPE := OFFICIAL
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := arrow_denniz
 PRODUCT_DEVICE := denniz
