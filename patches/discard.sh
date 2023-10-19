@@ -4,8 +4,8 @@ DEVICE=denniz
 VENDOR=oneplus
 
 export originalPath=$(pwd)
-export branch1="2by2/13"
-export branch2="arrow/arrow-13.1"
+export branch1="2by2/14"
+export branch2="arrow/arrow-14.0"
 
 if [ $(pwd) == "${ANDROID_BUILD_TOP}" ] ; then export originalPath=$(pwd)/device/$VENDOR/$DEVICE/patches/ ; fi
 
