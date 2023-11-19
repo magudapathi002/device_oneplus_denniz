@@ -97,6 +97,14 @@ TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton
 TARGET_KERNEL_SOURCE := kernel/oneplus/denniz
 
+# Prebuilt kernel
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/prebuilt/dtb.img:$(TARGET_COPY_OUT)/dtb.img \
+    $(DEVICE_PATH)/prebuilt/kernel:kernel
+
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
