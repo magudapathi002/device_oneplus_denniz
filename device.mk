@@ -36,7 +36,7 @@ $(call inherit-product, vendor/oneplus/denniz/IMS-denniz/mtk-ims.mk)
 $(call inherit-product-if-exists, packages/apps/prebuilt-apps/prebuilt-apps.mk)
 
 # OneplusParts
-$(call inherit-product, packages/apps/OneplusParts/parts.mk)
+$(call inherit-product, device/oneplus/denniz/parts/parts.mk)
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
