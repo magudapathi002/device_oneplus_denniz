@@ -1,0 +1,8 @@
+on boot
+	chown system system /sys/devices/virtual/oplus_chg/usb/otg_switch
+    chown system system /sys/devices/virtual/oplus_chg/battery/mmi_charging_enable
+	
+	# Touchpanel
+	chown system system /proc/touchpanel/oplus_tp_limit_enable
+	write /proc/touchpanel/oplus_tp_limit_enable 0
+    chown system system /proc/touchpanel/oplus_tp_direction
