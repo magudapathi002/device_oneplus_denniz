@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_denniz.mk
+    $(LOCAL_DIR)/blaze_denniz.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_denniz-eng \
-    aosp_denniz-userdebug \
-    aosp_denniz-user
+    blaze_denniz-eng \
+    blaze_denniz-userdebug \
+    blaze_denniz-user

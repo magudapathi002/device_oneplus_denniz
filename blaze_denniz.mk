@@ -22,18 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/denniz/device.mk)
 
 # Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-# ArrowOS Stuff
-IS_PHONE := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-FORCE_AOSP_DIALER := true
-ARROW_GAPPS := true
-
-# 2by2 Stuff
-2BY2_BUILD_TYPE := OFFICIAL
+#ProjectBlaze Stuff
+BLAZE_BUILD_TYPE := UNOFFICIAL
+BLAZE_MAINTAINER := Magudapathi
+# TARGET_SUPPORTS_BLUR := true (optional)
+EXTRA_UDFPS_ANIMATIONS := true
+WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_denniz
