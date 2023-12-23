@@ -32,7 +32,7 @@ EXTRA_UDFPS_ANIMATIONS := true
 WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_denniz
+PRODUCT_NAME := blaze_denniz
 PRODUCT_DEVICE := denniz
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := DN2103
