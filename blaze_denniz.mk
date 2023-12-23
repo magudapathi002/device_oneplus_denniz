@@ -28,7 +28,7 @@ $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 BLAZE_BUILD_TYPE := UNOFFICIAL
 BLAZE_MAINTAINER := Magudapathi
 # TARGET_SUPPORTS_BLUR := true (optional)
-EXTRA_UDFPS_ANIMATIONS := true
+# EXTRA_UDFPS_ANIMATIONS := true
 WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
